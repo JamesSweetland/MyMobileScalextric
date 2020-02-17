@@ -38,7 +38,7 @@ function config($stateProvider, $urlRouterProvider) {
             }
 
         },
-        templateUrl: 'scripts/states/index/onboardingView.html',
+        templateUrl: 'scripts/states/onboarding/onboardingView.html',
         controller: 'onboardingViewCtrl',
         controllerAs: 'onboardingView',
         resolve: {
