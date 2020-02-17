@@ -58,12 +58,12 @@ function config($stateProvider, $urlRouterProvider) {
      Car Control Page
      User can control the cars throttle
     */
-    var carControlState = {
-        name: 'carControl',
-        url: '/control',
-        templateUrl: 'scripts/states/carControl/carControlView.html',
-        controller: 'CarControlViewCtrl',
-        controllerAs: 'carControlView',
+    var raceState = {
+        name: 'race',
+        url: '/race',
+        templateUrl: 'scripts/states/race/raceView.html',
+        controller: 'raceViewCtrl',
+        controllerAs: 'raceView',
         params: {
             channel: null,
             ip_address: null
@@ -85,7 +85,7 @@ function config($stateProvider, $urlRouterProvider) {
     };
 
     $stateProvider.state(onboardingState);
-    $stateProvider.state(carControlState);
+    $stateProvider.state(raceState);
 
     $urlRouterProvider.otherwise('/onboarding');
 }
