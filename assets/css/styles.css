@@ -1,8 +1,8 @@
 body{
-    background-color: lightblue;
+    font-family: "Verdana";
+    background-color: #4d75b3;/*blue*/
     color: white;
     text-align: center;
-    font-family: verdana;
 }
 
 .throttle{
