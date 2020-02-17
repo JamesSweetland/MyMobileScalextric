@@ -1,0 +1,9 @@
+<span ng-bind="raceView.throttle" ng-show="!raceView.throttleError"></span>
+<span ng-show="raceView.throttleError">Error</span>
+<div>
+    <input type="range" min="0" max="100" value="0" orient="vertical" class="throttle" ng-model="raceView.throttle">
+    <input type="button" value="Stop" ng-click="raceView.stop()"></input>
+</div>
+<span ng-bind="raceView.actualThrottle"></span>
+<button ng-repeat="resource in raceView.resources track by $index" ng-model="raceView.resources[$index]" ng-click="raceView.fireSpecialWeapon(resource.id)">{{resource.name}}</button>
+<select ng-model="raceView.targetChannel" ng-options="c for c in raceView.targetChannels" required></select>
