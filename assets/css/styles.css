@@ -5,6 +5,11 @@ body{
     text-align: center;
 }
 
+.wrapper{
+    background-color: #f44336;/*red*/
+    border: solid white;
+}
+
 .throttle{
     writing-mode: bt-lr; /* IE */
     -webkit-appearance: slider-vertical; /* WebKit */
