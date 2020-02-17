@@ -1,4 +1,4 @@
-angular.module('app').controller('IndexViewCtrl', IndexViewCtrl);
+angular.module('app').controller('onboardingViewCtrl', onboardingViewCtrl);
 
 IndexViewCtrl.$inject = [
     '$rootScope',
@@ -7,7 +7,7 @@ IndexViewCtrl.$inject = [
     'brokerDetails'
 ];
 
-function IndexViewCtrl($rootScope, $state, mqttService, brokerDetails) {
+function onboardingViewCtrl($rootScope, $state, mqttService, brokerDetails) {
     var vm = this;
 
     //Initialises the range of channels that can be selected and the selected channel
