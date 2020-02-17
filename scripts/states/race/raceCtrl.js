@@ -1,6 +1,6 @@
-angular.module('app').controller('CarControlViewCtrl', CarControlViewCtrl);
+angular.module('app').controller('raceViewCtrl', raceViewCtrl);
 
-CarControlViewCtrl.$inject = [
+raceViewCtrl.$inject = [
     '$scope',
     '$state',
     '$stateParams',
@@ -8,7 +8,7 @@ CarControlViewCtrl.$inject = [
     'brokerDetails'
 ];
 
-function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDetails) {
+function raceViewCtrl($scope, $state, $stateParams, mqttService, brokerDetails) {
     var vm = this;
 
     var changed = false;
@@ -133,7 +133,7 @@ function CarControlViewCtrl($scope, $state, $stateParams, mqttService, brokerDet
     /*
      When users changes car throttle a change request is sent to server. 
     */
-    $scope.$watch("carControlView.throttle", function (newThrottle, oldThrottle) {
+    $scope.$watch("raceViewCtrl.throttle", function (newThrottle, oldThrottle) {
         if (newThrottle != oldThrottle) {
             var payload = {
                 set : newThrottle
