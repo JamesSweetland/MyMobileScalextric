@@ -14,9 +14,9 @@ function config($stateProvider, $urlRouterProvider) {
      Index Page
      user can enter ip address and channel number
     */
-    var indexState = {
-        name: 'index',
-        url: '/index?uuid&brokerHost&brokerPort&username&password&ssl',
+    var onboardingState = {
+        name: 'onboarding',
+        url: '/onboarding?uuid&brokerHost&brokerPort&username&password&ssl',
         params: {
             uuid : {
                 dynamic: false
@@ -38,9 +38,9 @@ function config($stateProvider, $urlRouterProvider) {
             }
 
         },
-        templateUrl: 'scripts/states/index/indexView.html',
-        controller: 'IndexViewCtrl',
-        controllerAs: 'indexView',
+        templateUrl: 'scripts/states/index/onboardingView.html',
+        controller: 'onboardingViewCtrl',
+        controllerAs: 'onboardingView',
         resolve: {
             broker: ['$stateParams','brokerDetails', function ($stateParams,brokerDetails) {
             
@@ -84,10 +84,10 @@ function config($stateProvider, $urlRouterProvider) {
         }
     };
 
-    $stateProvider.state(indexState);
+    $stateProvider.state(onboardingState);
     $stateProvider.state(carControlState);
 
-    $urlRouterProvider.otherwise('/index');
+    $urlRouterProvider.otherwise('/onboarding');
 }
 
 angular.module('app').run(run);
