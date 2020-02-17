@@ -38,7 +38,7 @@ function config($stateProvider, $urlRouterProvider) {
             }
 
         },
-        templateUrl: 'app/shared/index/indexView.html',
+        templateUrl: 'scripts/states/index/indexView.html',
         controller: 'IndexViewCtrl',
         controllerAs: 'indexView',
         resolve: {
@@ -61,7 +61,7 @@ function config($stateProvider, $urlRouterProvider) {
     var carControlState = {
         name: 'carControl',
         url: '/control',
-        templateUrl: 'app/shared/carControl/carControlView.html',
+        templateUrl: 'scripts/states/carControl/carControlView.html',
         controller: 'CarControlViewCtrl',
         controllerAs: 'carControlView',
         params: {
@@ -93,7 +93,3 @@ function config($stateProvider, $urlRouterProvider) {
 angular.module('app').run(run);
 run.$inject = [
 ]
-
-function run() {
-    console.log('version 1.0.0 Yusof Bandar');
-}
