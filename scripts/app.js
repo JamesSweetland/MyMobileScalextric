@@ -10,9 +10,9 @@ config.$inject = [
 
 function config($stateProvider, $urlRouterProvider) {
 
-    /* 
-     Index Page
-     user can enter ip address and channel number
+    /*
+    Onboarding State
+    Users see this screen first and select name and car
     */
     var onboardingState = {
         name: 'onboarding',
@@ -55,8 +55,8 @@ function config($stateProvider, $urlRouterProvider) {
     }
 
     /*
-     Car Control Page
-     User can control the cars throttle
+    Race State
+    User can control the cars on this page
     */
     var raceState = {
         name: 'race',
