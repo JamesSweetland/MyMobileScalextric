@@ -1,6 +1,6 @@
 angular.module('app').controller('onboardingViewCtrl', onboardingViewCtrl);
 
-IndexViewCtrl.$inject = [
+onboardingViewCtrl.$inject = [
     '$rootScope',
     '$state',
     'mqttService',
