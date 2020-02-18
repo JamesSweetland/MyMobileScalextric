@@ -89,11 +89,3 @@ function config($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/onboarding');
 }
-
-angular.module('app').run(run);
-run.$inject = [
-]
-
-function run() {
-    console.log('Mobile Scalextric');
-}
