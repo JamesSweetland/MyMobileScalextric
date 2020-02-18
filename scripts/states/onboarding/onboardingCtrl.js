@@ -49,7 +49,7 @@ function onboardingViewCtrl($rootScope, $state, mqttService, brokerDetails) {
 
             mqttService.connect(function (success, error) {
                 if (success) {
-                    $state.transitionTo('carControl',
+                    $state.transitionTo('race',
                         {
                             channel: vm.channel,
                         });
