@@ -93,3 +93,7 @@ function config($stateProvider, $urlRouterProvider) {
 angular.module('app').run(run);
 run.$inject = [
 ]
+
+function run() {
+    console.log('Mobile Scalextric');
+}
